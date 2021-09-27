@@ -1,7 +1,7 @@
 from using_decorators import show_args
 from using_decorators import show_intrinsics
 
-@show_intrinsics
+@show_intrinsics # careful  -this decorator gets called for EVERY iteration of this function!!!!!!!!!!!!!!!
 def is_square(number):
     '''
     determine if a value is a square number
@@ -16,7 +16,7 @@ def is_square(number):
 @show_args
 def filterSquares(start, stop):
     '''
-    Use the 'is_square' method to filter just square nubmers 
+    Use the 'is_square' method to filter just square numbers 
     '''
     numbers_sq = list(filter(is_square, range(start, stop+1)))
     for n in numbers_sq:

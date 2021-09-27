@@ -20,7 +20,7 @@ if __name__ == '__main__':
     sq_l= list( map( square, range(1,6) ) ) # take the 'square' fn and apply a bunch of numbers to it
     print(sq_l)
     # we can use a function to filter values
-    odds_l = list( filter( isOdd, range(-10**1000, 10**1000) ) )
+    odds_l = list( filter( isOdd, range(-10**8, 10**8) ) )
     # print(odds_l)
     # using 'reduce'
     r = reduce( add, odds_l, 10 ) # also add ten!!

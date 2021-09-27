@@ -1,5 +1,6 @@
-Advanced Python Review Exercise 1
-=================================
+Advanced Python Review Exercise 1 see https://pastebin.com/C3mdHPKq
+================================= until about 2:45 ish
+  sample solutions are now in the repo
 Ask the user for a number 'n' (check it is a numeric integer)
 Print the square roots of the numbers from 1 to n using map
 (You could just print each one, or populate a collection with all the resulting values)

@@ -35,6 +35,6 @@ class ReviewOne(Review):
 
 if __name__ == '__main__':
     r = ReviewOne(-100, 100)
-    # print(r)
-    # r.mapSquareRoots()
+    print(r)
+    r.mapSquareRoots()
     r.filterSquares()
