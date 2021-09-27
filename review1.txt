@@ -1,0 +1,30 @@
+Advanced Python Review Exercise 1
+=================================
+Ask the user for a number 'n' (check it is a numeric integer)
+Print the square roots of the numbers from 1 to n using map
+(You could just print each one, or populate a collection with all the resulting values)
+Optionally, do the same using list comprehension
+
+Implement a function which takes a single parameter and reports if it is a square number 
+(i.e. return True or False)
+Use this as a filter function to take the numbers -100 to 100 inclusive
+and return only those values which are NOT square numbers
+(Again, consider using a collection for the resulting values)
+
+Import the 'show_args' method from this morning and use it to decorate each method
+
+Optional
+--------
+Write your own decorator method which takes a function as an input 
+and nicely displays some intrinsics of that function
+
+In a separate module write a class which incorporates the functions you wrote above
+Instances of the class should take min/max values (with sensible defaults)
+The class methods should then apply map, filter or reduce to this range (min/max) and return nicely formatted results
+
+Override the __str__ method so a class instance prints nicely
+
+Write an abstract base class which encapsulates properties for 'min' and 'max' and also at least on method. Architect your class so it inherits from this abstract base class
+
+
+

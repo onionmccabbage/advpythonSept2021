@@ -17,5 +17,5 @@ class Circle(Shape):
             self.__name = 'default'
 
 if __name__ == '__main__':
-    c = Circle('meridian')
+    c = Circle('Merethingy')
     c.display()

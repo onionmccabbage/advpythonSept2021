@@ -11,10 +11,10 @@ class Duck(): # all classes ultimately descend from the Object type
     def __str__(self): # here we override the built in __str__ method (used by print)
         return 'This is a Duck called {}'.format(self.__name)
     # we often use getter and setter methods to access and mutate properties
-    # @property # this is called decorator syntax
+    @property # this is called decorator syntax
     def name(self):
         return self.__name
-    # @name.setter
+    @name.setter
     def name(self, new_name):
         # we should check the value is within bounds
         self.__name = new_name
@@ -33,4 +33,4 @@ if __name__ == '__main__':
     print(e)
 
     # it is possible to access name-mangled members
-    print(e._Duck__name)
+    print(e._Duck__name) # avoid doing this
