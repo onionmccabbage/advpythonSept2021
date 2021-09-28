@@ -52,6 +52,6 @@ def useLocationGenerator():
     main(city, country)
 
 if __name__ == '__main__':
-    # askUser()
+    askUser()
     useLocationGenerator()
     readCities()

@@ -1,0 +1,36 @@
+Description: clear sky Temperature: 12°C in Athlone
+The wind speed is 6.09 coming from 253° 
+Description: clear sky Temperature: 12°C in Galway
+The wind speed is 7.12 coming from 262° 
+Description: clear sky Temperature: 12°C in Athlone
+The wind speed is 6.09 coming from 253° 
+Description: clear sky Temperature: 12°C in Galway
+The wind speed is 7.12 coming from 262° 
+Description: clear sky Temperature: 12°C in Athlone
+The wind speed is 6.09 coming from 253° 
+Description: clear sky Temperature: 12°C in Galway
+The wind speed is 7.12 coming from 262° 
+Description: broken clouds Temperature: 17°C in Hull
+The wind speed is 3.58 coming from 211° 
+Description: scattered clouds Temperature: 10°C in Canberra
+The wind speed is 2.06 coming from 120° 
+Description: few clouds Temperature: 18°C in Berlin
+The wind speed is 1.79 coming from 290° 
+Description: clear sky Temperature: 25°C in Madrid
+The wind speed is 1.79 coming from 203° 
+Description: clear sky Temperature: 11°C in Athlone
+The wind speed is 5.56 coming from 258° 
+Description: light rain Temperature: 12°C in Galway
+The wind speed is 7.27 coming from 270° 
+Description: clear sky Temperature: 11°C in Athlone
+The wind speed is 5.56 coming from 258° 
+Description: light rain Temperature: 12°C in Galway
+The wind speed is 7.27 coming from 270° 
+Description: broken clouds Temperature: 17°C in Hull
+The wind speed is 3.58 coming from 210° 
+Description: overcast clouds Temperature: 11°C in Canberra
+The wind speed is 0.51 coming from 90° 
+Description: scattered clouds Temperature: 18°C in Berlin
+The wind speed is 3.13 coming from 316° 
+Description: clear sky Temperature: 25°C in Madrid
+The wind speed is 3.13 coming from 248° 
