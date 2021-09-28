@@ -1,0 +1,22 @@
+this gets redirected to our log file
+this gets redirected to our log file
+this gets redirected to our log file
+this is redirected by our decorated method
+this is redirected by our decorated method
+this is redirected by our decorated method
+this is 
+            redirected 
+            by our decorated 
+            method
+this is 
+            redirected 
+            by our decorated 
+            method
+this is 
+            redirected 
+            by our decorated 
+            method
+this is 
+redirected 
+by our decorated 
+method
