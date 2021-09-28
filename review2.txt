@@ -1,0 +1,43 @@
+Advanced Python Review 2  see https://pastebin.com/GnBs8JD3
+========================  until 3:00 
+In a new package, write modules to implement a weather service
+You can use the following end-point to get the current weather (as JSON):
+http://api.openweathermap.org/data/2.5/weather?q=athlone,ie&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+(Remember to import requests)
+
+In your code, ask the user to input a city and a country (athlone and ie above) and inject them into the url
+(You could also pass these in as sys.argv parameters)
+Validate that they entered a non-empty string for city, and 2 or 3 letters for country
+
+Make a 'get' request to the openweathermap API, using the city and country values entered by the user
+Convert the response text from JSON into a Python structure
+Print the weather description, temperature, wind-speed and wind-direction
+  e.g. if your returned data structure is called 'weather', do something like this: 
+	desc = weather['weather'][0]['description']
+    	temp = weather['main']['temp']
+   	wspd = weather['wind']['speed']
+    	wdir = weather['wind']['deg']
+
+For every successful weather request, append the results to a file (either json.dumps or pickle.dumps)
+
+Optional:
+Write a custom generator which yields city/country pairs
+Use this generator to make weather requests for the __next__ city/country pair
+
+Append the following 'city, country' values in a text file (e.g. via your generator):
+'''Athlone,ie
+Galway,ie
+Hull,uk
+Canberra,aus
+Berlin,de
+Madrid,es'''
+Read in these city/country pairs and for each make a request for the current weather
+(You will need to use 'readline' rather than 'read')
+
+Write a 'Weather' class and populate it from some retrieved values (e.g. description, temperature, wind)
+Write a class to JSON Encode your Weather class
+
+Also write a Decoder class to retrieve the weather
+
+
+
