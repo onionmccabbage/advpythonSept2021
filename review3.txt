@@ -1,0 +1,47 @@
+Using client/server and/or using Databases  see https://pastebin.com/nx1KHrMd
+==========================================  until 3:00 
+For these exercises, pick which ones you want to try
+
+Client/Server:
+--------------
+Make the server we already wrote into a proxy for other API end-points
+
+Return to the client and server modules we wrote previosuly and adapt the server with several conditional blocks:
+If the client asks for 'user/1' (or similar):
+  the server should invoke a request to 'https://jsonplaceholder.typicode.com/users/1' then return data to the client
+  (do this by using your code or download my code from the repo at https://github.com/onionmccabbage/advpythonSept2021)
+If the client asks for 'weather/galway/ie' (etc):
+  the server should invoke a request for the weather (using code we already have) and return weather to the client
+On the client, ask the user for input, and persist the client until the user enters 'quit'
+
+Optionally, pass in the parameters as sys.argv variables
+Also optionally, write a generator to yield request strings (jsonplaceholder and/or weather requests)
+
+Databases
+---------
+Return to the weather exercise (or use the solution from the repository)
+Initialise a weather database with a table and data members (e.g. city, country, description, temperature and date-time)
+You could use the city as the primary key, or provide a unique key field, or (as I do) use the date time 
+Check it works by manually adding some weather data
+
+For every weather report, put the results into the database, including a date-time of when you created the report
+Provide a way to read back all the weather reports
+You could also tie this in to the server proxy exercise above
+
+Some useful statements
+statement = '''CREATE TABLE weather
+                (date DATETIME PRIMARY KEY,
+                 city VARCHAR(255),
+                 country VARCHAR(3),
+                 description VARCHAR(255),
+                 temperature FLOAT)'''
+
+statement = '''INSERT INTO weather VALUES("{}","{}","{}","{}",{})'''.format(now.strftime('%Y-%m-%d %H:%M:%S'),city,country,desc,temp)
+
+
+If Time
+-------
+When starting the server and client, pass in sys.argv parameters for 'localhost' and port-number
+(You could find your own IP address and use that)
+Or if you can't use argv, then read the parameters in from a config file
+
