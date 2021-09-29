@@ -15,7 +15,14 @@ def myServer():
         # read data from the client
         buf = client.recv(1024) # in this case we read the first 1024 bits of the request
         print('Server received {}'.format(buf))
-        break
+        # send a response back to the client
+        client.send( buf.upper() ) # here we choose to send the request back as upper case
+        # we need a way to quit the server
+        if buf == b'quit': # we expect the byte string 'quit'
+            print('server is closing')
+            server.close()
+            break # break out of hte while loop
+
 
 if __name__ == '__main__':
     myServer()
